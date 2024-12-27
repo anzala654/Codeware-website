@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWave Developers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f8fb;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #1e3a8a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            background-color: white;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 5px;
+        }
+
+        .search-bar button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .main-content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .vision, .services, .get-in-touch {
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: #1e3a8a;
+        }
+
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: auto;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .service {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .service:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .service h3 {
+            margin-bottom: 10px;
+            color: #1e3a8a;
+        }
+
+        .contact-info {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .search-bar {
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CodeWave Developers</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="careers.html">Careers</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>&#128269;</button>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <section class="vision">
+            <h1>Our Vision</h1>
+            <p>We aim to revolutionize the tech industry by delivering innovative and scalable software solutions that empower businesses worldwide.</p>
+        </section>
+
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="services-container">
+                <div class="service">
+                    <h3>Data Analysis</h3>
+                    <p>Turn your raw data into actionable insights.</p>
+                </div>
+                <div class="service">
+                    <h3>Data Visualization</h3>
+                    <p>Visualize your data with stunning dashboards and charts.</p>
+                </div>
+                <div class="service">
+                    <h3>Database Development</h3>
+                    <p>Design and manage efficient, scalable databases.</p>
+                </div>
+                <div class="service">
+                    <h3>Desktop App Development</h3>
+                    <p>Create powerful and user-friendly desktop applications.</p>
+                </div>
+                <div class="service">
+                    <h3>Website Development</h3>
+                    <p>Build modern, responsive, and high-performing websites.</p>
+                </div>
+                <div class="service">
+                    <h3>Mockup Designs</h3>
+                    <p>Craft professional and visually appealing mockup designs.</p>
+                </div>
+                <div class="service">
+                    <h3>Logo Design</h3>
+                    <p>Create unique and memorable logos for your brand.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="get-in-touch">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:contact@codewave.com">contact@codewave.com</a></p>
+                <p>Phone: +123 456 7890</p>
+                <p>Follow us on Social Media:</p>
+                <p>Facebook | Twitter | LinkedIn | Instagram</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CodeWave Developers. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
